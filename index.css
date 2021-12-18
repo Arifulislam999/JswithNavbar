@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.continer {
+    flex-wrap: wrap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient( 45deg, black, green, red, blue, white, lightgreen);
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-color: white;
+    margin-top: 2px;
+    background-image: url(./img.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center; */
+}
+
+@font-face {
+    font-family: font;
+    src: url(./font.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 9vh;
+    /* background-color: goldenrod; */
+    position: fixed;
+    transition: all 0.7s;
+}
+
+.nav-left {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-weight: bolder;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: hotpink;
+    text-shadow: 4px 5px 6px blanchedalmond;
+    font-family: font;
+}
+
+.nav-right {
+    position: absolute;
+    right: 10px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+ul li a {
+    color: wheat;
+    transition: all 0.5s;
+}
+
+ul li:hover a {
+    text-decoration: underline;
+    text-shadow: 3px 4px 5px white;
+}
+
+
+/* .mid {
+    margin-top: 2px;
+    background-image: url(./img.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+} */
+
+section {
+    text-transform: uppercase;
+    width: 100%;
+    height: 70vh;
+    margin-top: 5px;
+    font-size: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-color: violet;
+}
+
+section:nth-child(even) {
+    background-color: goldenrod;
+}
+
+.sticky {
+    background-color: black;
+    color: rgb(61, 39, 39);
+    box-shadow: 5px 5px 5px rgb(145, 123, 123);
+    z-index: 100;
+}
+
+.contain {
+    border: 1px solid black;
+    display: table;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 45px;
+    padding: 10px 25px;
+    opacity: 0.8;
+}
+
+.contain {
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px white;
+    font-family: font;
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+
+section:nth-child(6) {
+    background-color: wheat;
+    font-family: font;
+    height: 20vh;
+}
